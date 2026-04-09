@@ -123,6 +123,9 @@ bot.on("text", (ctx) => {
   );
 });
 
+const { createcode } = require("./handlers/createcode");
+bot.command("createcode", createcode);
+
 // ── Launch ────────────────────────────────────────────────────────────────────
 bot.launch().then(() => console.log("🤖 PuntLens Bot running..."));
 process.once("SIGINT",  () => bot.stop("SIGINT"));
