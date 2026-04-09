@@ -130,5 +130,3 @@ bot.command("createcode", createcode);
 bot.launch().then(() => console.log("🤖 PuntLens Bot running..."));
 process.once("SIGINT",  () => bot.stop("SIGINT"));
 process.once("SIGTERM", () => bot.stop("SIGTERM"));
-const { createcode }  = require("./handlers/createcode");
-bot.command("createcode", createcode);
